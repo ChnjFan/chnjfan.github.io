@@ -1,0 +1,57 @@
+name: Deploy Hugo to GitHub Pages
+
+# 触发条件：main分支推送、手动运行
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# 权限配置（内置GITHUB_TOKEN足够，不用额外创建token）
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 并发：只保留最新一次构建
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取源码（递归拉取主题submodule）
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # 2. 安装Hugo Extended
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      # 3. 构建静态网站（--minify压缩代码）
+      - name: Build static site
+        run: hugo --minify
+
+      # 4. 配置Pages环境
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # 5. 上传静态产物
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      # 6. 部署到GitHub Pages
+      - name: Deploy to Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_id: ${{ steps.pages.outputs.artifact_id }}
