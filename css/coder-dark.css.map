@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder-dark.css",
-	"sourceRoot": "/Users/fan/Code/chnjfan.github.io",
+	"sourceRoot": "/Users/fan/Code/blog",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder-dark.scss",
 		"themes/hugo-coder/assets/scss/_variables.scss",
