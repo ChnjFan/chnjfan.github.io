@@ -139,6 +139,10 @@ customRemoteJS = []
 # # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 # connectsrc = ["'self'", "https://www.google-analytics.com"]
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    
 [taxonomies]
 category = "categories"
 series = "series"
