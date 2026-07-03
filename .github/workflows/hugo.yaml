@@ -41,7 +41,7 @@ jobs:
       - name: 安装Dart Sass
         run: sudo snap install dart-sass
       - name: 检出
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0

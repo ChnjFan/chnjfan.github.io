@@ -41,13 +41,13 @@
     <loc>http://localhost:1313/pt-br/series/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/series/"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/series/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/series/"
+                hreflang="en"
+                href="http://localhost:1313/series/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt-br/tags/</loc>
