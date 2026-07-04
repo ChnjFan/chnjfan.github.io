@@ -26,7 +26,7 @@ author = "Fan Lvn"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Fan Lvn's personal website"
 keywords = "blog,developer,personal,C++,network"
-info = ["Full Stack Developer"]
+info = ["C/C++ Developer","Learning AI","Building IM Systems"]
 avatarURL = "images/avatar.jpeg"
 #gravatar = "chnj_lf@163.com"
 dateFormat = "January 2, 2026"
