@@ -4,6 +4,11 @@ description = "从零构建一个生产级 C++ HTTP 网关：多线程 io_contex
 date = "2026-07-04"
 aliases = ["boost.beast", "http server"]
 author = "ChnjFan"
+tags = [
+    "C++",
+    "Network",
+    "HTTP",
+]
 +++
 
 ## 项目背景和整体架构
