@@ -15,7 +15,7 @@ pagerSize = 6
 
 [markup]
 [markup.highlight]
-noClasses = false
+noClasses = true
 
 [markup.goldmark]
 [markup.goldmark.renderer]
@@ -26,10 +26,9 @@ author = "Fan Lvn"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Fan Lvn's personal website"
 keywords = "blog,developer,personal,C++,network"
-info = ["C/C++ Developer","Learning AI","Building IM Systems"]
+info = ["C/C++ Developer","Learning AI","Building IM Service"]
 avatarURL = "images/avatar.jpeg"
-#gravatar = "chnj_lf@163.com"
-dateFormat = "January 2, 2026"
+dateFormat = "January 2, 2006"
 since = 2021
 # Git Commit in Footer, uncomment the line below to enable it
 commit = "https://github.com/ChnjFan/chnjfan.github.io/tree/"
@@ -155,26 +154,6 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/ChnjFan/"
 
-[[params.social]]
-name = "Twitter"
-icon = "fa-brands fa-x-twitter fa-2x"
-weight = 3
-url = "https://twitter.com/fanlvn/"
-
-[[params.social]]
-name = "LinkedIn"
-icon = "fa-brands fa-linkedin fa-2x"
-weight = 4
-url = "https://www.linkedin.com/in/fanlvn/"
-
-[[params.social]]
-name = "RSS"
-icon = "fa-solid fa-rss fa-2x"
-weight = 6
-url = "https://myhugosite.com/index.xml"
-rel = "alternate"
-type = "application/rss+xml"
-
 [languages.en]
 languageName = "English"
 
@@ -189,11 +168,16 @@ weight = 2
 url = "posts/"
 
 [[languages.en.menu.main]]
-name = "Projects"
+name = "Tags"
 weight = 3
+url = "tags/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 4
 url = "projects/"
 
 [[languages.en.menu.main]]
 name = "Contact me"
-weight = 5
+weight = 6
 url = "contact/"
