@@ -9,6 +9,11 @@ tags = [
     "Network",
     "HTTP",
 ]
+categories = [
+    "C++",
+    "Boost",
+    "HTTP",
+]
 +++
 
 ## 项目背景和整体架构
