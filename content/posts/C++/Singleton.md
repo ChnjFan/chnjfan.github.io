@@ -1,7 +1,7 @@
 +++
 title = "深入理解 C++ 单例模式：从 CRTP 到 std::call_once"
 description = "采用 CRTP 实现的 C++ 单例模式"
-date = "2026-07-04"
+date = "2026-07-06"
 aliases = ["boost.beast", "http server"]
 author = "ChnjFan"
 tags = [
