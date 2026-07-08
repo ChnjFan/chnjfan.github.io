@@ -6,6 +6,7 @@ aliases = ["AI", "LLM", "RAG"]
 author = "ChnjFan"
 tags = [
     "AI",
+    "Agent",
     "RAG",
 ]
 categories = [
@@ -14,7 +15,7 @@ categories = [
 +++
 
 {{< notice tip >}}
-本文是 LangChain 官方教程，完整讲解基于 LangChain 构建 RAG Agent。
+本文是根据 LangChain 官方教程进行的总结，基于 LangChain 构建 RAG Agent。
 {{< /notice >}}
 
 ## 什么是 RAG
