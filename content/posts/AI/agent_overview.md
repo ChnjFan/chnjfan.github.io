@@ -1,7 +1,7 @@
 +++
 title = "AI Agent - AI 智能体概述"
 description = "通过 LangChain 学习 RAG 技术和实战使用"
-date = "2026-07-06"
+date = "2026-07-08"
 aliases = ["AI", "LLM", "RAG"]
 author = "ChnjFan"
 tags = [
