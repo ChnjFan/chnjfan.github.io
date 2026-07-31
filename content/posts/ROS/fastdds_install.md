@@ -10,6 +10,8 @@ tags = [
 ]
 +++
 
+![](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260731163135855.png)
+
 ROS 2 的底层通信默认就是 FastDDS 在干活。
 
 但当你需要绕过 ROS 的抽象层，直接控制 QoS、调整可靠性策略、或者在不装 ROS 的嵌入式设备上跑 DDS 通信时，ROS 2 的封装反而成了阻碍。
@@ -18,9 +20,9 @@ ROS 2 的底层通信默认就是 FastDDS 在干活。
 
 ## FastDDS 是什么？
 
-数据分发服务（DDS）是一种以数据为中心的通信协议，采用发布订阅（DCPS）模型，用于分布式应用程序之间的通信与系统集成。通过定义 API 与通信行为和服务质量 QoS，使得数据生产者能够高效地将信息分配给数据消费者。
+数据分发服务（DDS）是采用**数据为中心的发布订阅（DCPS）模型**的通信协议，用于分布式应用程序之间的通信与系统集成。通过定义 API 与通信行为和服务质量 QoS，使得数据生产者能够高效地将信息分配给数据消费者。
 
-跟 MQTT 不同，DDS 没有 broker。参与者之间通过多播自动发现对方，数据直接走 UDP 传输。这意味着没有单点故障，延迟也更低。
+跟 MQTT 不同，DDS 没有 broker。参与者之间通过多播自动发现对方，数据直接走 UDP 传输。这意味着没有单点故障，延迟也更低，因此用于机器人和智能驾驶的通信中。
 
 Fast DDS 是 C++ 实现的 DDS 开源库，是 ROS 2 的默认中间件。
 
@@ -413,7 +415,7 @@ target_link_libraries(DDSHelloWorldPublisher fastdds fastcdr)
 
 ### Subscriber
 
-订阅者实现接收发布者的 10 条消息后结束。
+订阅者有一部分实现与发布者相同，这一节只介绍了不同的实现。
 
 ```cpp
 class HelloWorldSubscriber
