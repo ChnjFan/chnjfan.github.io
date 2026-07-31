@@ -26,8 +26,8 @@ author = "Fan Lvn"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Fan Lvn's personal website"
 keywords = "blog,developer,personal,C++,network"
-info = ["C/C++ Developer","Learning AI","Building IM Service"]
-avatarURL = "images/avatar.jpeg"
+info = ["C/C++ Developer"]
+avatarURL = "images/avatar.png"
 dateFormat = "January 2, 2006"
 since = 2021
 # Git Commit in Footer, uncomment the line below to enable it
