@@ -15,6 +15,7 @@ pagerSize = 20
 
 [markup]
 [markup.highlight]
+style = "onedark"
 noClasses = true
 
 [markup.goldmark]
