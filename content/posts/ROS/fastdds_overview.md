@@ -9,6 +9,8 @@ tags = [
 ]
 +++
 
+![](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260803171101125.png)
+
 {{< notice tip >}}
 FastDDS 是 OMG DDS 标准的 C++ 实现，也是 ROS 2 默认的中间件。分成 DDS API 层和 RTPS 协议层，两层从头文件到实现目录都是分开的。
 
