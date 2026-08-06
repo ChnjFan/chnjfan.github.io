@@ -9,6 +9,8 @@ tags = [
 ]
 +++
 
+![](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260806105256501.png)
+
 {{< notice tip >}}
 Fast-DDS 的实体（Entity）按 DDS 规范的容器模型组织：`DomainParticipant` 包含 `Publisher`/`Subscriber`/`Topic`，`Publisher` 包含 `DataWriter`，`Subscriber` 包含 `DataReader`。每个容器同时是被包含实体的工厂。
 
