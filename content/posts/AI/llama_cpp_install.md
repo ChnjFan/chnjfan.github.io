@@ -12,6 +12,7 @@ categories = [
 ]
 +++
 
+![](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260806110302148.png)
 
 这是用 llama.cpp 源码拆解大模型推理引擎的系列开篇。使用 Mac mini（M4/16GB）从源码构建 llama.cpp，运行 Qwen3-8B 量化版，默认参数（40960 上下文）实测生成速度 19.3 tok/s。
 
