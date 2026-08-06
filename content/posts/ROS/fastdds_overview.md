@@ -2,7 +2,7 @@
 title = "Fast-DDS 源码解析（一）：从 hello_world 到分层架构"
 description = "你已经跑通了 HelloWorld，打开 src/cpp/ 看到两个大目录——fastdds/ 和 rtps/，这系列文章帮你建立阅读源码的第一张地图。"
 date = "2026-08-03"
-aliases = ["DDS"]
+aliases = ["DDS-overview"]
 author = "ChnjFan"
 tags = [
     "DDS",

@@ -2,7 +2,7 @@
 title = "FastDDS 快速上手：从源码编译到第一个 Hello World"
 description = "一篇带你从零编译安装 FastDDS、跑通发布/订阅示例、理解核心概念和 QoS 策略的中文指南"
 date = "2026-07-30"
-aliases = ["DDS"]
+aliases = ["DDS—install"]
 author = "ChnjFan"
 tags = [
     "ROS",

@@ -1,5 +1,5 @@
 baseURL = "https://ChnjFan.github.io/"
-title = "Lvnf"
+title = "ChnjFan"
 theme = "hogo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -23,9 +23,9 @@ noClasses = true
 unsafe = true
 
 [params]
-author = "Lvnf"
+author = "ChnjFan"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Lvnf's personal website"
+description = "ChnjFan's personal website"
 keywords = "blog,developer,personal,C++,network"
 info = ["C/C++ Developer"]
 avatarURL = "images/avatar.JPG"
