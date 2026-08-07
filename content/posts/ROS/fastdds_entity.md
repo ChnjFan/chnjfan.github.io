@@ -7,6 +7,9 @@ author = "ChnjFan"
 tags = [
     "DDS",
 ]
+categories = [
+    "Fast-DDS",
+]
 +++
 
 ![](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260806105256501.png)

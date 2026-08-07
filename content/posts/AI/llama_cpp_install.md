@@ -8,7 +8,7 @@ tags = [
     "AI",
 ]
 categories = [
-    "AI",
+    "llama.cpp",
 ]
 +++
 

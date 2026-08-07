@@ -8,6 +8,9 @@ tags = [
     "ROS",
     "DDS",
 ]
+categories = [
+    "Fast-DDS",
+]
 +++
 
 ![](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260731163135855.png)
