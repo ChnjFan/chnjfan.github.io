@@ -5,10 +5,10 @@ date = "2026-08-03"
 aliases = ["DDS-overview"]
 author = "ChnjFan"
 tags = [
-    "DDS",
+    "Fast-DDS",
 ]
 categories = [
-    "Fast-DDS",
+    "DDS",
 ]
 +++
 

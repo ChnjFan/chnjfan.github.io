@@ -6,10 +6,10 @@ aliases = ["DDS—install"]
 author = "ChnjFan"
 tags = [
     "ROS",
-    "DDS",
+    "Fast-DDS",
 ]
 categories = [
-    "Fast-DDS",
+    "DDS",
 ]
 +++
 

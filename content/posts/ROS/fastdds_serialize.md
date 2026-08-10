@@ -5,10 +5,10 @@ date = "2026-08-07"
 aliases = ["DDS-serialize"]
 author = "ChnjFan"
 tags = [
-    "DDS",
+    "Fast-DDS",
 ]
 categories = [
-    "Fast-DDS",
+    "DDS",
 ]
 +++
 
@@ -935,5 +935,4 @@ TypeObject 有两种粒度的配置，xtypes 示例的两个 profile 文件正�
 还有一个贯穿编码层的机制值得记住：扩展性注解决定编码算法。FINAL → PLAIN，APPENDABLE → DELIMIT（XCDRv2 下的 dheader），MUTABLE → 参数列表。类型演进的兼容性不是靠约定维持的，而是编码结构本身提供的保证。
 
 在本篇中我们提到了类型信息在注册时通过 `register_type_object_representation()` 把 TypeObject 存进了全局表。这份类型描述在 Discovery 阶段会被写进 SEDP 报文，让远端节点判断「这个 Topic 传的类型我能不能接收」。但 Discovery 还要解决更基础的问题：两个进程启动之后怎么发现对方的存在，端点匹配的条件是什么。我们将在下一篇中探索控制面 SPDP 协议和 SEDP 协议。
-
 
