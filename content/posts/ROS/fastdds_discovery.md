@@ -1,7 +1,7 @@
 +++
 title = "Fast-DDS 源码解析（四）：Discovery 从陌生到匹配"
 description = "从 hello_world 的等待匹配出发，拆解 Discovery 的两阶段机制：SPDP 周期通告与租约、SEDP 端点匹配条件，以及 Discovery Server 的中心化取舍"
-date = "2026-08-08"
+date = "2026-08-10"
 aliases = ["DDS-discovery"]
 author = "ChnjFan"
 tags = [
