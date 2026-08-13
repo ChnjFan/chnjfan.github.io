@@ -146,23 +146,28 @@ void MQTTAsync_checkDisconnect(MQTTAsync handle, MQTTAsync_command* command)
 
 ```c
 // paho.mqtt.c/src/MQTTAsyncUtils.c:2456-2497（节选）
-static void MQTTAsync_closeOnly(Clients* client, enum MQTTReasonCodes reasonCode, MQTTProperties* props)
+static void MQTTAsync_closeOnly(Clients* client,
+                enum MQTTReasonCodes reasonCode, MQTTProperties* props)
 {
     client->good = 0;
     ... // 清 ping 状态
     if (client->net.socket > 0)
     {
         MQTTProtocol_checkPendingWrites();
-        if (client->connected && MQTTAsync_Socket_noPendingWrites(client->net.socket))
-            MQTTPacket_send_disconnect(client, reasonCode, props);  // 真正发出 DISCONNECT 报文
-        ... // WebSocket / SSL / Socket 关闭
+        if (client->connected 
+            && MQTTAsync_Socket_noPendingWrites(client->net.socket))
+        {// 真正发出 DISCONNECT 报文
+            MQTTPacket_send_disconnect(client, reasonCode, props);
+        }
+        //... WebSocket / SSL / Socket 关闭
         client->net.socket = 0;
     }
     client->connected = 0; // 到这里 connected 才归零
     client->connect_state = NOT_IN_PROGRESS;
 }
 
-void MQTTAsync_closeSession(Clients* client, enum MQTTReasonCodes reasonCode, MQTTProperties* props)
+void MQTTAsync_closeSession(Clients* client,
+         enum MQTTReasonCodes reasonCode, MQTTProperties* props)
 {
     MQTTAsync_closeOnly(client, reasonCode, props);
     if (client->cleansession ||
