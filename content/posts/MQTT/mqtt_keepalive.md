@@ -104,6 +104,8 @@ void setRetryLoopInterval(int keepalive)
 
 ## 连接存活检测与 PINGREQ 触发条件
 
+心跳包 PINGREQ（`0xC0 0x00`）和 PINGRESP（`0xD0 0x00`）报文长度只有两个字节。
+
 ### 连接存活检测：retry 循环在做什么
 
 上一节我们计算出了 `retryLoopIntervalms`，谁在用它？异步客户端有一个后台线程 receiveThread 定期调用 `MQTTAsync_retry` 判断是否要进行连接存活检查，同步客户端中用 `MQTTClient_retry`，检查逻辑相同。以异步为例：
