@@ -27,7 +27,7 @@ categories = [
 
 - 自动重连由 `shouldBeConnected`（用户意图）和 `retrying`（重连中）两个标志控制，**只有异常断开才触发**；主动 `disconnect()` 会清零 `shouldBeConnected`，确保不会重连。
 - 重试间隔是「**指数退避 + 随机抖动**」：1s → 2s → 4s → … 翻倍到上限，再在 ±20% 区间内抖动，避免一群设备同时断线后同步重连造成惊群。
-- **重连只修复传输层**：连接会重新建立，但订阅列表、离线消息是否还在取决于会话层，clean session=true 时每次重连都是「一张白纸」。
+- **重连只修复传输层**：连接会重新建立，但订阅列表、离线消息是否还在取决于会话层，`clean session=true` 时每次重连都是「一张白纸」。
 
 
 ## 开启方式与重连状态机
@@ -121,7 +121,7 @@ int MQTTAsync_randomJitter(int currentIntervalBase, int minInterval, int maxInte
 
 这段代码详细的说明在：[如何生成指定范围内的随机整数](http://stackoverflow.com/questions/2509679/how-to-generate-a-random-number-from-within-a-range)
 
-`currentInterval` 通过 `MQTTAsync_randomJitter` 计算在 [base/1.2, base×1.2] 区间内随机抖动，避免多个客户端同时断线后同步重连造成的惊群。
+`currentInterval` 通过 `MQTTAsync_randomJitter` 计算在 `[base/1.2, base×1.2]` 区间内随机抖动，避免多个客户端同时断线后同步重连造成的惊群。
 
 最终等待时间在 `[base/1.2, base×1.2]` 内随机取值。为什么加抖动？一批设备同时掉线时，会用相同的退避节奏重连形成「同步重连」，所有设备的负载同时压到 broker 上。随机抖动把这些峰值打散。
 
@@ -322,6 +322,6 @@ if (rc == MQTTASYNC_SUCCESS)
 回看开头问题的结论：
 - 重连由 `shouldBeConnected` + `retrying` 两个标志控制，主动 `disconnect()` 不会触发重连；
 - 重试间隔是指数退避 + 随机抖动（±20%），防惊群；
-- 重连只修复传输层，订阅/离线消息是否还在由会话层决定，clean session=true 时每次重连都是新的会话。
+- 重连只修复传输层，订阅/离线消息是否还在由会话层决定，`clean session=true` 时每次重连都是新的会话。
 
 

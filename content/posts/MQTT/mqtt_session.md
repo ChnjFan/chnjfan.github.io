@@ -59,7 +59,7 @@ v3（3.1/3.1.1）的 `clean session` 使用一个布尔值覆盖全部场景：
 MQTT 5.0 把一个开关拆成时间和连接两个维度：
 
 - **Clean Start**（Connect Flags bit1）：只在连接时清一次。1 = 丢弃旧会话开新会话；0 = 尝试续接旧会话。
-- **Session Expiry Interval**（CONNECT 属性，单位秒）：会话断开后存活多久。0 = 断开即过期（行为 ≈ v3 的 clean session=true）；0xFFFFFFFF = 永不过期；N 秒 = 断开后 N 秒内重连还能续接，这期间 Broker 替你保存订阅和离线队列。
+- **Session Expiry Interval**（CONNECT 属性，单位秒）：会话断开后存活多久。0 = 断开即过期（行为 ≈ v3 的 `clean session=true`）；0xFFFFFFFF = 永不过期；N 秒 = 断开后 N 秒内重连还能续接，这期间 Broker 替你保存订阅和离线队列。
 
 在 v5 版本中，如果想要保留会话，只设 `clean start = 0` 还不够，session expiry 默认是 0，断开瞬间会话照样过期。
 

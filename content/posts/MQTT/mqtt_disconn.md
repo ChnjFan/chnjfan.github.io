@@ -137,6 +137,8 @@ void MQTTAsync_checkDisconnect(MQTTAsync handle, MQTTAsync_command* command)
 }
 ```
 
+如果存在在途消息未完成，需要等到 sendThread 将在途消息都处理完后调用 `MQTTAsync_checkTimeouts` 中，然后再次调用 `checkDisconnect` 进行断连。
+
 注意 `was_connected` 在这里被保存时，`connected` 还是 1，因为真正把 `connected` 清成 0 的是接下来 `closeSession` 内部的 `closeOnly`。
 
 
