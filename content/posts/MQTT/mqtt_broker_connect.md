@@ -6,14 +6,14 @@ aliases = ["MQTT-broker-connect"]
 author = "ChnjFan"
 tags = [
     "MQTT",
-
+    "Build MQTT Broker",
 ]
 categories = [
     "MQTT",
 ]
 +++
 
-**Jianm** 是我从零开始写的一个最小 MQTT Broker，名字取自中文的「**建木**」，这是「山海经」中连接天地的神树，恰如 broker 在 MQTT 协议中的角色，连接各种设备。Gihub 的[代码仓库](https://github.com/ChnjFan/Jianm)在这里，欢迎讨论、提 issue，觉得有帮助的话也欢迎 star ⭐。
+**Jianm** 是我从零开始写的一个最小 MQTT Broker，名字取自中文的「**建木**」，这是「山海经」中连接天地的神树，恰如 broker 在 MQTT 协议中的角色，连接各种设备。Github 的[代码仓库](https://github.com/ChnjFan/Jianm)在这里，欢迎讨论、提 issue，觉得有帮助的话也欢迎 star ⭐。
 
 本文是「从零实现 MQTT Broker」系列的第一篇，会随着代码的演进而持续更新。建议收藏或订阅系列文章，以便跟踪后续内容。
 
