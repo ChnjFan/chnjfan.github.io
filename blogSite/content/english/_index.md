@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Bits, Code & Engineering Memories."
-  content: "记录我在软件工程中的探索、实践与思考。\nA personal engineering notebook covering systems, networking, C++, middleware, and the lessons learned along the way."
+  content: "记录我在软件工程中的探索、实践与思考。"
   image: "/images/banner.png"
   button:
     enable: true
