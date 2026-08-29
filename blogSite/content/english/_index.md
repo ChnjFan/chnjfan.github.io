@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "浏览文章 🚀"
-    link: "/posts"
+    link: "/blog"
 
 # Features
 features:
