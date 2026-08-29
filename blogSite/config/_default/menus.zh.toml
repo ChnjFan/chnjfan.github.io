@@ -1,0 +1,58 @@
+############# Chinese navigation ##############
+
+# main menu
+[[main]]
+name = "首页"
+url = "/zh"
+weight = 1
+
+[[main]]
+name = "关于"
+url = "/zh/about"
+weight = 2
+
+[[main]]
+name = "博客"
+url = "/zh/blog"
+weight = 3
+
+[[main]]
+weight = 4
+name = "页面"
+
+[[main]]
+parent = "Pages"
+name = "联系我"
+url = "/zh/contact"
+
+[[main]]
+parent = "Pages"
+name = "作者"
+url = "/zh/authors"
+
+[[main]]
+parent = "Pages"
+name = "分类"
+url = "/zh/categories"
+
+[[main]]
+parent = "Pages"
+name = "标签"
+url = "/zh/tags"
+
+
+# footer menu
+[[footer]]
+name = "关于"
+url = "/zh/about"
+weight = 1
+
+[[footer]]
+name = "博客"
+url = "/zh/blog"
+weight = 2
+
+[[footer]]
+name = "隐私政策"
+url = "/zh/privacy-policy"
+weight = 3

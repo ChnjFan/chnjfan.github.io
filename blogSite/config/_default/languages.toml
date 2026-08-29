@@ -1,6 +1,14 @@
+################ Chinese language ##################
+[zh]
+label = "中"
+locale = "zh-cn"
+contentDir = "content/chinese"
+weight = 2
+
 ################ English language ##################
 [en]
 label = "En"
 locale = "en-us"
 contentDir = "content/english"
 weight = 1
+
