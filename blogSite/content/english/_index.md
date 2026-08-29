@@ -6,7 +6,7 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "浏览文章 🚀"
+    label: "Get Started Now 🚀"
     link: "/blog"
 
 # Features
