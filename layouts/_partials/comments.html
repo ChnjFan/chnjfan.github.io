@@ -1,0 +1,18 @@
+{{ if .IsPage (and (eq .Section "blog") (not .Draft)) }}
+<div class="giscus mt-10"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="ChnjFan/chnjfan.github.io"
+        data-repo-id="R_kgDOTMltxw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOTMltx84DCbTy"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}

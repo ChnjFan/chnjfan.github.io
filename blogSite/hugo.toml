@@ -2,11 +2,11 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "https://ChnjFan.github.io/"
 # Title of your website (required).
-title = "Hugoplate"
+title = "ByteMemo"
 # Your theme name
-# theme = "hugoplate"
+theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone = "America/New_York"
+timeZone = "Asia/Shanghai"
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/summaries/#automatic-summary
 # disable language
@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
-ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-google-analytics
+ID = 'G-X66YJ8REQE' # see https://gohugo.io/templates/internal/#configure-google-analytics
 
 ########################## Permalinks ############################
 [permalinks.page]

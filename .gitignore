@@ -1,0 +1,16 @@
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.lock
+.sass-cache
+npm-debug.log
+node_modules
+builds
+package-lock.json
+public
+resources
+jsconfig.json
+go.sum
+yarn.lock
+.hugo_build.lock
