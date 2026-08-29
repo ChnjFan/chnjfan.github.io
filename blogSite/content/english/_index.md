@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "ChnjFan's Tech Blog"
-  content: "ByteMeno 是 ChnjFan 的技术博客"
+  title: "Bits, Code & Engineering Memories."
+  content: "记录我在软件工程中的探索、实践与思考。\nA personal engineering notebook covering systems, networking, C++, middleware, and the lessons learned along the way."
   image: "/images/banner.png"
   button:
     enable: true
