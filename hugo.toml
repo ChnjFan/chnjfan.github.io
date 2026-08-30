@@ -1,6 +1,6 @@
 baseURL = "https://ChnjFan.github.io/"
 title = "ChnjFan"
-theme = "hogo-coder"
+theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
