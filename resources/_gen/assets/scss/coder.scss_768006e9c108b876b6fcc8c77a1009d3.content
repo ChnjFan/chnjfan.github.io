@@ -10883,6 +10883,13 @@ figure {
   .navigation .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase; }
+    .navigation .navigation-title img.navigation-logo {
+      height: 2.5rem;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle; }
+    .navigation .navigation-title img.logo-dark {
+      display: none !important; }
   .navigation .navigation-list {
     float: right;
     list-style: none;
@@ -10965,6 +10972,12 @@ figure {
     cursor: pointer; }
     .navigation i:hover, .navigation i:focus {
       color: #1565c0; }
+
+body.colorscheme-dark .navigation-title img.logo-light {
+  display: none !important; }
+
+body.colorscheme-dark .navigation-title img.logo-dark {
+  display: inline-block !important; }
 
 .pagination {
   display: flex;
