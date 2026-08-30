@@ -2,7 +2,7 @@
 title: "大家好，我是 ChnjFan!"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/image-placeholder.png"
+image: "/images/about.png"
 layout: "about"
 draft: false
 ---

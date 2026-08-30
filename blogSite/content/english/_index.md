@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Get Started Now 🚀"
-    link: "/blog"
+    link: "/en/blog"
 
 # Features
 features:

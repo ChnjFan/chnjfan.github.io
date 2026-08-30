@@ -21,22 +21,22 @@ weight = 4
 name = "页面"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "联系我"
 url = "/zh/contact"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "作者"
 url = "/zh/authors"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "分类"
 url = "/zh/categories"
 
 [[main]]
-parent = "Pages"
+parent = "页面"
 name = "标签"
 url = "/zh/tags"
 
