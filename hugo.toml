@@ -1,5 +1,5 @@
 baseURL = "https://ChnjFan.github.io/"
-title = "ChnjFan"
+title = "ByteMemo"
 theme = "hugo-coder-nx"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -24,6 +24,8 @@ unsafe = true
 
 [params]
 author = "ChnjFan"
+logo = "images/logo.png"
+logo_dark = "images/logo-darkmode.png"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "ChnjFan's personal website"
 keywords = "blog,developer,personal,C++,network"
