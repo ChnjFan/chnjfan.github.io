@@ -10573,7 +10573,14 @@ td {
   padding: 1.6rem; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto; }
+
+table th,
+table td {
+  padding: 0.5rem 1.5vw; }
 
 table td,
 table th {
@@ -10660,6 +10667,12 @@ figure {
         .content header h1 {
           font-size: 4rem;
           line-height: 4.4rem; } }
+  .content article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   .content article a:where(.external-link):not(:has(img)):after {
     content: "\f08e";
     padding-left: 0.5em;
