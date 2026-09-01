@@ -7,6 +7,7 @@ author = "ChnjFan"
 tags = [
     "perf",
     "火焰图",
+    "底层原理",
 ]
 categories = [
     "性能优化",
@@ -58,15 +59,7 @@ perf evlist -v -i perf.data
 
 以 CPU 周期等硬件事件的普通采样为例，整个过程可以画成下面这张图：
 
-{{< mermaid >}}
-flowchart TD
-    A["perf record：配置事件与采样方式"] --> B["内核 perf events：管理事件并记录采样现场"]
-    C["PMU / 软件事件 / tracepoint"] --> B
-    B --> D["mmap 环形缓冲区"]
-    D --> E["perf record：读取并写入 perf.data"]
-    E --> F["perf script：解析记录、按需展开调用栈、解析符号"]
-    F --> G["FlameGraph：折叠调用栈并绘图"]
-{{< /mermaid >}}
+![perf_progress](https://raw.githubusercontent.com/ChnjFan/img-bed/master/img/20260901113102742.png)
 
 图中的 perf 是用户态工具，perf events 是内核提供的事件机制，PMU 等是事件来源。火焰图脚本处理的是已经采集好的数据，本身不参与采样。
 
