@@ -1,0 +1,3 @@
+[submodule "themes/hugo-bearneo"]
+	path = themes/hugo-bearneo
+	url = https://github.com/rokcso/hugo-bearneo.git

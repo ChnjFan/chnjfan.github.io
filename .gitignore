@@ -1,3 +1,10 @@
+# Hugo generated files
+public/
+resources/
+.hugo_build.lock
+.hugo_build.lock/
+.hugo/
+
 # This .gitignore is appropriate for repositories deployed to GitHub Pages and using
 # a Gemfile as specified at https://github.com/github/pages-gem#conventional
 
