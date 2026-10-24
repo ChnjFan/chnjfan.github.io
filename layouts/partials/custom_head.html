@@ -1,0 +1,17 @@
+<style>
+  /* 首页标题中的人名高亮，可按需调整颜色 */
+  mark.name-highlight {
+    color: inherit;
+    background-color: rgba(255, 214, 64, 0.45);
+    padding: 0 0.08em;
+    border-radius: 0.12em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    mark.name-highlight {
+      background-color: rgba(255, 214, 64, 0.25);
+    }
+  }
+</style>
