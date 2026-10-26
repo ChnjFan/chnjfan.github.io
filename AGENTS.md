@@ -63,6 +63,7 @@ public/                   # 构建产物，不提交
 - 站点参数集中在 `hugo.toml` 的 `[params]`；修改前先读文件中的双语注释和主题手册，不要臆造键名。
 - 点赞、Follow Claim、作者头像、RSS、页脚、SEO 等细节见主题手册，本文件不重复。
 - 定制主题时，在本项目 `layouts/` 放同路径模板，或使用 `layouts/partials/custom_head.html`、`custom_body.html`；不要改 submodule。
+- 代码块高亮为 `github`（浅色）/ `github-dark`（深色），配色由 `static/css/chroma.css` 提供、在 `custom_head.html` 引入；改 `markup.highlight.style` 后须按该文件头部注释重新生成。
 
 ## 修改边界
 

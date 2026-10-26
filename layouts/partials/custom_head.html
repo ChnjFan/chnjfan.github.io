@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ "css/chroma.css" | relURL }}">
 <style>
   /* 首页标题中的人名高亮，可按需调整颜色 */
   mark.name-highlight {
@@ -13,5 +14,11 @@
     mark.name-highlight {
       background-color: rgba(255, 214, 64, 0.25);
     }
+  }
+
+  /* 代码块背景交给 Chroma 主题色（含深色模式），不再使用主题的次要背景色 */
+  /* Let Chroma paint the code block background, so light/dark palettes stay consistent. */
+  div.highlight code {
+    background-color: transparent;
   }
 </style>

@@ -142,3 +142,13 @@ ignoreErrors = ["error-disable-taxonomy"]
     # From h2 to h3, subsequent h levels will not be rendered.
     startLevel = 2
     endLevel = 3
+
+  # 代码块语法高亮主题，可选值见 https://gohugo.io/quick-reference/syntax-highlighting-styles/
+  # Syntax highlighting style for code blocks, see the link above for available styles.
+  # 使用 CSS 类而非行内样式，配色由 static/css/chroma.css 提供（含深色模式）。
+  # Colors come from static/css/chroma.css instead of inline styles (dark mode included).
+  # 修改 style 后需重新生成该文件，命令见文件头部注释。
+  # Regenerate that file after changing `style`, see the comment at the top of the file.
+  [markup.highlight]
+    style = "github"
+    noClasses = false
