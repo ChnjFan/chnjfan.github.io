@@ -47,9 +47,10 @@ public/                   # 构建产物，不提交
 
 ## 内容约定
 
-- frontmatter 用 TOML（`+++`），日期带时区。
-- 显式写 `slug`（英文、短横线）：文章 URL 为 `/p/<slug>`；不写时由 Hugo 生成，容易随标题变化。
-- 标题从 `##` 开始，TOC 只收 h2–h3；独立页面模板不输出标题和日期，正文需自带 `# 标题`。
+文章格式以 markdown-syntax.md 为范例：
+
+- frontmatter 用 YAML（`---`），字段：`title`、`date`（带时区）、`description`、`tags`；需要固定 URL 时显式写 `slug`（英文、短横线），文章 URL 为 `/p/<slug>`。
+- 正文先写导语段落，再用 `---` 分隔摘要；正文从 `##` 开始，TOC 只收 h2–h3；独立页面（`content/*.md`）正文需自带 `# 标题`。
 - `hugo new content/<page>.md` 默认写入 `menu = "main"`，不需要就从 frontmatter 删除。
 - `hugo new content/blog/<slug>.md` 会把站点已有标签填入 `tags`，按需删改。
 - 图片放 `static/img/`，用 `/img/<文件名>` 引用；`alt` 会显示为图注；加 `#minipic` 缩至 50%。
