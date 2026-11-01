@@ -4,26 +4,10 @@ Hugo 静态博客，主题为 Git submodule [`hugo-bearneo`](themes/hugo-bearneo
 
 本文件只记录 AI 助手无法从仓库直接推断的操作信息。主题功能与参数说明见[主题中文手册](themes/hugo-bearneo/docs/README_zh.md)；当前配置以 [hugo.toml](hugo.toml) 为准。
 
-## 开始前
-
-- 站点尚无内容：`content/`、`static/`、`layouts/` 均未创建，需要时新建。
-- 没有测试框架；改动的验收标准是 `hugo --gc --minify` 构建成功，且相关页面/链接输出正确。
-- `hugo.toml` 中作者 `Rokcso`、邮箱 `example@example.com`、版权、Kudos 地址、Follow ID 仍是主题示例值。
-- ⚠️ 部署工作流目前是无扩展名文件 `.github/workflows`，GitHub Actions 不识别；首次部署前应改为 `.github/workflows/deploy.yml`，否则 push 不会触发构建。
 
 ## 常用命令
 
 ```bash
-# 本地预览（含草稿）
-hugo server -D
-
-# 生产构建；提交前必须通过（与 CI 相同）
-hugo --gc --minify
-
-# 新建文章 / 独立页面（使用主题 archetypes）
-hugo new content/blog/<slug>.md
-hugo new content/<page>.md
-
 # 首次克隆后初始化主题
 git submodule update --init --recursive
 
@@ -39,9 +23,9 @@ git submodule update --remote themes/hugo-bearneo
 hugo.toml                 # 站点配置
 .github/workflows         # 部署工作流（文件名见上）
 themes/hugo-bearneo/      # 主题 submodule，只读
-content/                  # 文章与页面（待创建）
-static/img/               # 图片（待创建）
-layouts/partials/         # 覆盖主题 partial（待创建）
+content/                  # 文章与页面
+static/img/               # 图片
+layouts/partials/         # 覆盖主题 partial
 public/                   # 构建产物，不提交
 ```
 
@@ -49,10 +33,8 @@ public/                   # 构建产物，不提交
 
 文章格式以 markdown-syntax.md 为范例：
 
-- frontmatter 用 YAML（`---`），字段：`title`、`date`（带时区）、`description`、`tags`；需要固定 URL 时显式写 `slug`（英文、短横线），文章 URL 为 `/p/<slug>`。
+- frontmatter 用 YAML（`---`），字段：`title`、`date`（带时区）、`description`、`tags`。
 - 正文先写导语段落，再用 `---` 分隔摘要；正文从 `##` 开始，TOC 只收 h2–h3；独立页面（`content/*.md`）正文需自带 `# 标题`。
-- `hugo new content/<page>.md` 默认写入 `menu = "main"`，不需要就从 frontmatter 删除。
-- `hugo new content/blog/<slug>.md` 会把站点已有标签填入 `tags`，按需删改。
 - 图片放 `static/img/`，用 `/img/<文件名>` 引用；`alt` 会显示为图注；加 `#minipic` 缩至 50%。
 - Mermaid 需在 frontmatter 写 `mermaid = true`；脚本从 CDN 加载，需联网。
 - 单页可用 `toc`、`upvote` 覆盖站点开关；`hidden = true` 使文章不出现在列表。
