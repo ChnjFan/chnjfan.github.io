@@ -5,7 +5,7 @@
 title: ""
 ---
 
-# Hi! 👋 I'm <mark class="name-highlight">ChnjFan</mark>.
+# Hi! 👋 I'm <mark class="name-highlight">Finn</mark>.
 
 I’m a software engineer based in [Nanjing](https://www.wikiwand.com/en/Nanjing).
 
@@ -22,7 +22,7 @@ I’m excited to keep learning and growing in robotics.
 
 ---
 
-## 💘 Pin
+## 📌 Pin
 
 - Email: [chnj_lf@163.com](mailto:chnj_lf@163.com)
 - GitHub: [github.com/ChnjFan](https://github.com/ChnjFan)

@@ -61,7 +61,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
   # 版权说明文案，将应用到 RSS 和页面底部
   # Copyright notice text, to be applied to RSS and the bottom of the page.
-  copyright = "Copyright © 2026-2026, ChnjFan."
+  copyright = "Copyright © 2026-2026, Finn Lyu."
 
   # 博客文章列表是否按年份分组，Bear Blog 样式为 false
   # Is the list of blog articles grouped by year, the Bear Blog style is false.
@@ -120,7 +120,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   [params.author]
     # 若不配置，默认空
     # If not configured, default is empty
-    name = "ChnjFan"
+    name = "Finn"
     # 若不配置，默认空
     # If not configured, default is empty
     email = "chnj_lf@163.com"
