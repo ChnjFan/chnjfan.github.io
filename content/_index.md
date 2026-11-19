@@ -18,7 +18,7 @@ I’m excited to keep learning and growing in robotics.
 ## ✨ New
 
 - Joined a robotics company to work on system software architecture.
-- Started this site — I'll write about the transition from telecom to robotics and what I'm learning along the way.
+- Started this site — I’ll share my journey into robotics, things I learn, and other topics I’m curious about.
 
 ---
 
